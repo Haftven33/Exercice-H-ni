@@ -1,0 +1,21 @@
+while True:
+    while True :
+        temp = input("Quelle est la température?\n")
+        x = temp.isalpha()
+        if x == False :
+            temp=float(temp)
+            break
+        else:
+            print("veulliez entrer un nombre ")
+    while True:
+        x = input("Quelle est l’échelle de température utilisée: \n-C pour Celcius  \n-F pour Fahrenheit\n")
+        if x =="C":
+            tempF = (temp * 9/5) + 32 
+            print('La valeur '+ str(temp) +' °C vaut '+ str(tempF) + '°F ')
+            break
+        if x =="F":
+            tempC = (temp-32)*5/9 
+            print('La valeur '+ str(temp) +' °F vaut '+ str(tempC) + '°C ')
+            break
+        else: 
+            print("entrez une échelle correcte")
