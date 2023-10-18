@@ -1,0 +1,19 @@
+while True :
+    annee = input("Quelle est votre année de naissance?")
+    x = annee.isdigit()
+    if x == True :
+        annee=int(annee)
+        if annee > 1904 and annee<2023:
+            break
+        else:
+            print("veuillez entrer une année valable")
+
+    else:
+        print("veulliez entrer un nombre entier")
+print(annee)
+age = 2023-annee
+print(" Vous êtes né en "+str(annee)+" .Donc vous avez "+str(age)+" ans" )
+if age > 18: #on a demandé superieur à 18 ans
+    print("Et vous êtes majeur")
+else:
+    print("Et vous êtes mineur")
